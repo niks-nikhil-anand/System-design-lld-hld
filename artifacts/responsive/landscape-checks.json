@@ -1,0 +1,26 @@
+[
+  {
+    "dialogHeight": 375,
+    "height": 375,
+    "overflow": 0,
+    "scrollable": true,
+    "width": 667
+  },
+  {
+    "searchBottom": 363,
+    "viewportBottom": 375,
+    "width": 667
+  },
+  {
+    "dialogHeight": 390,
+    "height": 390,
+    "overflow": 0,
+    "scrollable": true,
+    "width": 844
+  },
+  {
+    "searchBottom": 378,
+    "viewportBottom": 390,
+    "width": 844
+  }
+]

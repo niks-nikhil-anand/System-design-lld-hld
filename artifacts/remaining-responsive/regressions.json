@@ -1,0 +1,47 @@
+[
+  {
+    "overflow": 0,
+    "path": "/",
+    "width": 320
+  },
+  {
+    "overflow": 0,
+    "path": "/",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "path": "/",
+    "width": 1536
+  },
+  {
+    "overflow": 0,
+    "path": "/blog",
+    "width": 320
+  },
+  {
+    "overflow": 0,
+    "path": "/blog",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "path": "/blog",
+    "width": 1536
+  },
+  {
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 320
+  },
+  {
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 768
+  },
+  {
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 1536
+  }
+]

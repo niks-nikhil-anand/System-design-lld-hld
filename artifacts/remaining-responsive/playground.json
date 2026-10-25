@@ -1,0 +1,401 @@
+[
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 320
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 360
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 375
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 390
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 430
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 639
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 640
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 767
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 768
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 820
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1023
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1024
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1279
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1280
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1440
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1535
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1536
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 1920
+  },
+  {
+    "issues": [],
+    "nodes": 6,
+    "overflow": 0,
+    "template": "Web tier",
+    "width": 2560
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 320
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 360
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 375
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 390
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 430
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 639
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 640
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 767
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 768
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 820
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1023
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1024
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1279
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1280
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1440
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1535
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1536
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 1920
+  },
+  {
+    "issues": [],
+    "nodes": 5,
+    "overflow": 0,
+    "template": "Event driven",
+    "width": 2560
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 320
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 360
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 375
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 390
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 430
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 639
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 640
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 767
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 768
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 820
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1023
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1024
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1279
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1280
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1440
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1535
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1536
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 1920
+  },
+  {
+    "issues": [],
+    "nodes": 4,
+    "overflow": 0,
+    "template": "Edge global",
+    "width": 2560
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Load Balancer"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "API Gateway"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Reverse Proxy"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "CDN"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "DNS"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Caching"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Redis"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "SQL vs NoSQL"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Database Replication"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Database Sharding"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Message Queues"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Kafka"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Rate Limiting"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Consistent Hashing"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Horizontal vs Vertical Scaling"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Microservices"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "WebSockets"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Event-Driven Architecture"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "CAP Theorem"
+  },
+  {
+    "inside": true,
+    "overflow": 0,
+    "title": "Circuit Breaker"
+  }
+]

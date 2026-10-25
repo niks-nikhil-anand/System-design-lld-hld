@@ -1,0 +1,1997 @@
+[
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "Explore all topics",
+    "overflow": 0,
+    "route": "#/explore",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "System design concepts",
+    "overflow": 0,
+    "route": "#/concepts",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "Algorithms",
+    "overflow": 0,
+    "route": "#/algorithms",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "Companies",
+    "overflow": 0,
+    "route": "#/companies",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "System design case studies",
+    "overflow": 0,
+    "route": "#/system-design",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1535
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1536
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 1920
+  },
+  {
+    "columns": 3,
+    "heading": "Structured Learning Paths",
+    "overflow": 0,
+    "route": "#/learning-paths",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "System Design Fundamentals",
+    "overflow": 0,
+    "route": "#/learning-paths/fundamentals",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "Backend Engineering Essentials",
+    "overflow": 0,
+    "route": "#/learning-paths/backend-essentials",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "Distributed Systems",
+    "overflow": 0,
+    "route": "#/learning-paths/distributed-systems",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "High-Level Design Interview Prep",
+    "overflow": 0,
+    "route": "#/learning-paths/hld-interview",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "Low-Level Design",
+    "overflow": 0,
+    "route": "#/learning-paths/lld",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "Algorithms and Data Structures",
+    "overflow": 0,
+    "route": "#/learning-paths/dsa",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "Scalable Backend Architecture",
+    "overflow": 0,
+    "route": "#/learning-paths/scalable-backend",
+    "width": 2560
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 320
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 360
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 375
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 390
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 430
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 639
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 640
+  },
+  {
+    "columns": 1,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 767
+  },
+  {
+    "columns": 2,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 768
+  },
+  {
+    "columns": 2,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 820
+  },
+  {
+    "columns": 2,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1023
+  },
+  {
+    "columns": 3,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1024
+  },
+  {
+    "columns": 3,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1279
+  },
+  {
+    "columns": 3,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1280
+  },
+  {
+    "columns": 3,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1440
+  },
+  {
+    "columns": 3,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1535
+  },
+  {
+    "columns": 4,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1536
+  },
+  {
+    "columns": 4,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 1920
+  },
+  {
+    "columns": 4,
+    "heading": "Your bookmarks",
+    "overflow": 0,
+    "route": "#/bookmarks",
+    "width": 2560
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 320
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 360
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 375
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 390
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 430
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 639
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 640
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 767
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 768
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 820
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1023
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1024
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1279
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1280
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1440
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1535
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1536
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 1920
+  },
+  {
+    "columns": null,
+    "heading": "About Systemly",
+    "overflow": 0,
+    "route": "#/about",
+    "width": 2560
+  }
+]

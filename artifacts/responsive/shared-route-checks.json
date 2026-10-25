@@ -1,0 +1,58 @@
+[
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 320
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 768
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 1440
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 1920
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 320
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 768
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 1440
+  },
+  {
+    "footer": true,
+    "header": true,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 1920
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "height": 375,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 667
+  },
+  {
+    "height": 390,
+    "overflow": 0,
+    "path": "/blog",
+    "width": 844
+  },
+  {
+    "height": 375,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 667
+  },
+  {
+    "height": 390,
+    "overflow": 0,
+    "path": "/blog/cache-aside-pattern",
+    "width": 844
+  }
+]
