@@ -70,7 +70,7 @@ function blank(section: AdminSection): AdminRecord {
     metric: "",
     data:
       section === "blog"
-        ? { author: "Systemly Editorial", sections: [] }
+        ? { author: "System Design Mate Editorial", sections: [] }
         : section === "learning-paths"
           ? { modules: [] }
           : section === "playground"
