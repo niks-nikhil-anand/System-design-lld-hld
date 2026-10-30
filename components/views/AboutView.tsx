@@ -24,10 +24,10 @@ export function AboutView({ onBackToHome }: AboutViewProps) {
       <div className="about-card rounded-3xl border border-[var(--border)] bg-[var(--surface)] shadow-md space-y-8">
         <div>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--text)] mb-3">
-            About Systemly
+            About System Design Mate
           </h1>
           <p className="text-base text-[var(--muted)] leading-relaxed">
-            Systemly is an educational platform designed to build deep intuition
+            System Design Mate is an educational platform designed to build deep intuition
             for distributed systems, backend engineering architectures, and
             scalable data pipelines through interactive visual models.
           </p>
@@ -49,7 +49,7 @@ export function AboutView({ onBackToHome }: AboutViewProps) {
             public engineering talks, conference papers, and engineering blog
             posts. They are not verified descriptions of any company’s internal
             systems, and no company listed endorses or is affiliated with
-            Systemly. Company names appear as plain text for identification
+            System Design Mate. Company names appear as plain text for identification
             only.
           </p>
         </div>
@@ -79,7 +79,7 @@ export function AboutView({ onBackToHome }: AboutViewProps) {
             </h2>
           </div>
           <p className="text-sm text-[var(--muted)] leading-relaxed">
-            Systemly is provided free for learning and interview preparation.
+            System Design Mate is provided free for learning and interview preparation.
             Content is structured to reflect common high-level design interview
             scenarios and industry standards.
           </p>
