@@ -52,7 +52,7 @@ export function ArticleTableOfContents({
         </h2>
         {links}
         <div className="mt-4 pt-4 border-t border-[var(--border)] text-xs text-[var(--muted)]">
-          Part of the Systemly field notes.
+          Part of the System Design Mate field notes.
           <Link
             href="/#/learning-paths"
             className="min-h-11 flex items-center gap-1 font-medium"
