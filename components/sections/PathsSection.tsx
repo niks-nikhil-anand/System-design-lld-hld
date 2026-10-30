@@ -13,7 +13,7 @@ interface PathsSectionProps {
 
 export function PathsSection({ onSelectPath, onViewAll }: PathsSectionProps) {
   return (
-    <section className="sy-container site-section border-t border-[var(--border)]">
+    <section data-home-section="paths" className="sy-container site-section border-t border-[var(--border)]">
       {/* Section Header */}
       <div className="section-heading">
         <div>
