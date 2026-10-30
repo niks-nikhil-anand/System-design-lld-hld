@@ -1,24 +1,13 @@
-"use client";
-
-import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, BookOpen, Eye, EyeOff, GitBranch, Layers, LockKeyhole, Mail, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, GitBranch, Layers, LockKeyhole, Mail, ShieldCheck } from "lucide-react";
 import { SystemlyLogo } from "@/components/ui/SystemlyLogo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function LoginPage() {
-  const [visible, setVisible] = useState(false);
-  const [message, setMessage] = useState("");
-
-  function submit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setMessage("Sign-in is not connected yet. You can explore the admin dashboard preview below.");
-  }
-
   return (
     <div className="workspace-page login-page">
       <header className="workspace-header sy-container">
-        <Link href="/" aria-label="Systemly home"><SystemlyLogo /></Link>
+        <Link href="/" aria-label="System Design Mate home"><SystemlyLogo /></Link>
         <div className="flex items-center gap-4">
           <Link href="/" className="workspace-back"><ArrowLeft size={15} /> Back to learning</Link>
           <ThemeToggle />
@@ -41,25 +30,24 @@ export function LoginPage() {
         <section className="login-card" aria-labelledby="login-title">
           <span className="workspace-icon"><LockKeyhole size={23} /></span>
           <h1 id="login-title">Welcome back</h1>
-          <p className="text-[var(--muted)]">Log in to your Systemly workspace.</p>
-          <form onSubmit={submit} className="login-form">
+          <p className="text-[var(--muted)]">Log in to your System Design Mate workspace.</p>
+          <div className="login-form">
             <div>
               <label htmlFor="email">Email address</label>
               <div className="workspace-input"><Mail size={17} aria-hidden="true" /><input id="email" name="email" type="email" autoComplete="username" placeholder="you@example.com" required /></div>
             </div>
             <div>
-              <label htmlFor="password">Password</label>
-              <div className="workspace-input"><LockKeyhole size={17} aria-hidden="true" /><input id="password" name="password" type={visible ? "text" : "password"} autoComplete="current-password" placeholder="Enter your password" required /><button type="button" onClick={() => setVisible(!visible)} aria-label={visible ? "Hide password" : "Show password"} aria-pressed={visible}>{visible ? <EyeOff size={18} /> : <Eye size={18} />}</button></div>
+              <div className="login-label-row"><label htmlFor="password">Password</label><span>Forgot password?</span></div>
+              <div className="workspace-input"><LockKeyhole size={17} aria-hidden="true" /><input id="password" name="password" type="password" autoComplete="current-password" placeholder="Enter your password" required /></div>
             </div>
             <p className="login-help">Use the email associated with your account.</p>
-            <button type="submit" className="workspace-button workspace-button-primary sy-primary">Log in <ArrowRight size={17} /></button>
-            {message && <p role="status" className="workspace-notice">{message}</p>}
-          </form>
-          <div className="login-preview"><span>Just looking around?</span><Link href="/admin">Preview admin dashboard <ArrowRight size={15} /></Link></div>
-          <p className="login-footnote"><ShieldCheck size={15} /> Frontend preview · authentication coming next</p>
+            <Link href="/admin" className="workspace-button workspace-button-primary sy-primary">Log in <ArrowRight size={17} /></Link>
+          </div>
+          <div className="login-preview"><span>Just looking around?</span><Link href="/admin">Explore the workspace preview <ArrowRight size={15} /></Link></div>
+          <p className="login-footnote"><ShieldCheck size={15} /> Interface preview · access controls are not connected</p>
         </section>
       </main>
-      <footer className="login-footer sy-container"><span>Systemly · Understand the systems behind the software.</span><Link href="/#/about">About Systemly <ArrowRight size={14} /></Link></footer>
+      <footer className="login-footer sy-container"><span>System Design Mate · Understand the systems behind the software.</span><Link href="/about">About System Design Mate <ArrowRight size={14} /></Link></footer>
     </div>
   );
 }
