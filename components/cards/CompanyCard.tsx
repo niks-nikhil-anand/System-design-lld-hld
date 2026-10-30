@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { CompanyItem } from "@/types/systemly";
 import { Bookmark, Building2, Layers, ArrowRight } from "lucide-react";
 
@@ -24,23 +25,25 @@ export function CompanyCard({
   return (
     <article
       onClick={onClick}
-      className="sy-card group relative flex flex-col justify-between p-4 sm:p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] cursor-pointer select-none transition-all duration-200"
+      className="sy-card home-company-card group relative flex flex-col justify-between p-4 sm:p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] cursor-pointer select-none transition-all duration-200"
     >
       <div>
         {/* Header row */}
         <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-base bg-[var(--accentSoft)] text-[var(--accent)] border border-[var(--border)] shadow-xs">
+            <div data-company={item.slug}
+              className="home-company-mark w-9 h-9 rounded-xl flex items-center justify-center font-bold text-base bg-[var(--accentSoft)] text-[var(--accent)] border border-[var(--border)] shadow-xs">
               {initial}
             </div>
             <div>
               <h3 className="text-[16px] sm:text-[17px] font-semibold text-[var(--text)] tracking-[-0.01em] group-hover:text-[var(--accent)] transition-colors">
-                <button
-                  type="button"
-                  className="min-h-11 text-left cursor-pointer"
+                <Link
+                  href={"/companies/" + item.slug}
+                  onClick={(event) => event.stopPropagation()}
+                  className="min-h-11 inline-flex items-center text-left cursor-pointer"
                 >
                   {item.title}
-                </button>
+                </Link>
               </h3>
               <span className="text-[11px] font-medium text-[var(--muted)] flex items-center gap-1">
                 <Building2 className="w-3 h-3" />
@@ -95,10 +98,10 @@ export function CompanyCard({
           <Layers className="w-3.5 h-3.5" />
           {item.topics} topics explored
         </span>
-        <span className="font-medium text-[var(--accent)] group-hover:underline flex items-center gap-1">
+        <Link href={"/companies/" + item.slug} onClick={(event) => event.stopPropagation()} className="font-medium text-[var(--accent)] group-hover:underline flex items-center gap-1">
           View architecture
           <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
-        </span>
+        </Link>
       </div>
     </article>
   );
