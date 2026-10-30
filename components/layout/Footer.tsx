@@ -1,148 +1,97 @@
-"use client";
-
-import React from "react";
 import Link from "next/link";
+import { ArrowRight, Mail } from "lucide-react";
 import { SystemlyLogo } from "@/components/ui/SystemlyLogo";
-import { ViewType } from "@/types/systemly";
 
-interface FooterProps {
-  onNavigate: (view: ViewType, slug?: string | null) => void;
-  onScrollToFaq?: () => void;
-}
+const footerGroups = [
+  {
+    title: "Learn",
+    links: [
+      ["Explore", "/explore"],
+      ["Concepts", "/concepts"],
+      ["Algorithms", "/algorithms"],
+      ["Case studies", "/case-studies"],
+      ["Learning paths", "/learning-paths"],
+      ["Playground", "/playground"],
+    ],
+  },
+  {
+    title: "Company resources",
+    links: [
+      ["Companies", "/companies"],
+      ["Architecture models", "/companies"],
+      ["Scalability patterns", "/concepts"],
+      ["System design roadmap", "/learning-paths"],
+      ["Best practices", "/blog"],
+    ],
+  },
+  {
+    title: "More",
+    links: [
+      ["Blog", "/blog"],
+      ["About", "/about"],
+      ["Contact", "/contact"],
+      ["FAQ", "/#faq"],
+    ],
+  },
+] as const;
 
-export function Footer({ onNavigate, onScrollToFaq }: FooterProps) {
-  const footerSections = [
-    {
-      title: "PRODUCT",
-      links: [
-        {
-          label: "Explore Directory",
-          onClick: () => onNavigate("explore", "all"),
-        },
-        {
-          label: "System Design Concepts",
-          onClick: () => onNavigate("explore", "concept"),
-        },
-        {
-          label: "Core Algorithms",
-          onClick: () => onNavigate("explore", "algorithm"),
-        },
-        { label: "Case Studies", onClick: () => onNavigate("explore", "case") },
-        {
-          label: "Architecture Playground",
-          onClick: () => onNavigate("playground"),
-        },
-      ],
-    },
-    {
-      title: "LEARN",
-      links: [
-        { label: "Learning Paths", onClick: () => onNavigate("paths") },
-        {
-          label: "Company Architectures",
-          onClick: () => onNavigate("explore", "company"),
-        },
-        { label: "Your Bookmarks", onClick: () => onNavigate("bookmarks") },
-        {
-          label: "Frequently Asked Questions",
-          onClick: onScrollToFaq || (() => onNavigate("home")),
-        },
-      ],
-    },
-    {
-      title: "ABOUT",
-      links: [
-        { label: "Content Notes", onClick: () => onNavigate("about") },
-        { label: "Privacy Policy", onClick: () => onNavigate("about") },
-        { label: "Terms of Use", onClick: () => onNavigate("about") },
-        { label: "Contact", onClick: () => onNavigate("about") },
-      ],
-    },
-  ];
-
+export function Footer() {
   return (
-    <footer className="w-full border-t border-[var(--border)] bg-[var(--surface)] transition-colors mt-auto site-footer">
-      <div className="sy-container site-section">
-        <div className="footer-grid">
-          {/* Brand info */}
-          <div className="min-w-0 flex flex-col gap-3">
-            <Link
-              href="/"
-              aria-label="Systemly home"
-              onClick={(event) => {
-                if (
-                  !event.metaKey &&
-                  !event.ctrlKey &&
-                  !event.shiftKey &&
-                  !event.altKey
-                ) {
-                  event.preventDefault();
-                  onNavigate("home");
-                }
-              }}
-              className="inline-flex min-h-11 self-start items-center"
-            >
-              <SystemlyLogo size={28} />
+    <footer className="site-footer">
+      <div className="sy-container site-footer__inner">
+        <div className="site-footer__main">
+          <div className="site-footer__brand">
+            <Link href="/" aria-label="System Design Mate home" className="site-footer__logo">
+              <SystemlyLogo size={38} />
             </Link>
-            <p className="text-sm text-[var(--muted)] max-w-sm leading-relaxed">
-              Systemly is an interactive visual platform for understanding
-              scalable system design, distributed data structures, and
-              production architectures.
+            <p>
+              Learn system design through clear explanations, interactive diagrams,
+              algorithm walkthroughs, company architecture models, and guided practice.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[var(--muted)] pt-2">
-              <span className="shrink-0 w-2 h-2 rounded-full bg-[var(--ok)] inline-block"></span>
-              <span>
-                All 20 concepts, 15 algorithms & 10 case studies active
-              </span>
-            </div>
+            <Link className="site-footer__contact" href="/contact">
+              <span><Mail size={17} aria-hidden="true" /></span>
+              Get in touch
+              <ArrowRight size={15} aria-hidden="true" />
+            </Link>
           </div>
 
-          {/* Columns */}
-          <nav aria-label="Footer navigation" className="footer-groups">
-            {footerSections.map((sec) => (
-              <div key={sec.title} className="flex flex-col gap-3">
-                <h4 className="text-xs font-semibold tracking-wider text-[var(--muted)] uppercase">
-                  {sec.title}
-                </h4>
-                <ul className="space-y-2">
-                  {sec.links.map((link) => (
-                    <li key={link.label}>
-                      <button
-                        type="button"
-                        onClick={link.onClick}
-                        className="text-xs text-[var(--muted)] hover:text-[var(--text)] transition-colors text-left cursor-pointer"
-                      >
-                        {link.label}
-                      </button>
-                    </li>
+          <nav className="site-footer__groups" aria-label="Footer navigation">
+            {footerGroups.map((group) => (
+              <div className="site-footer__group" key={group.title}>
+                <h2>{group.title}</h2>
+                <ul>
+                  {group.links.map(([label, href]) => (
+                    <li key={`${label}-${href}`}><Link href={href}>{label}</Link></li>
                   ))}
-                  {sec.title === "LEARN" && (
-                    <li>
-                      <Link
-                        href="/blog"
-                        className="text-xs !text-[var(--muted)] hover:!text-[var(--text)] transition-colors"
-                      >
-                        Blog
-                      </Link>
-                    </li>
-                  )}
                 </ul>
               </div>
             ))}
           </nav>
+
+          <aside className="site-footer__updates" aria-labelledby="footer-updates-title">
+            <span className="site-footer__updates-icon"><Mail size={22} aria-hidden="true" /></span>
+            <div>
+              <h2 id="footer-updates-title">Stay updated</h2>
+              <p>Discover new system design guides, company examples, and learning paths.</p>
+              <Link href="/blog" className="site-footer__updates-link">
+                Explore the latest guides <ArrowRight size={16} aria-hidden="true" />
+              </Link>
+            </div>
+          </aside>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="footer-bottom">
-          <div>
-            © 2026 Systemly. Educational models based on public engineering
-            resources.
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="break-words text-[11px] font-mono px-2 py-0.5 rounded bg-[var(--surface2)] border border-[var(--border)]">
-              Next.js 16 + React 19 + Tailwind v4
-            </span>
-          </div>
+        <div className="site-footer__bottom">
+          <p className="site-footer__copyright">© 2026 System Design Mate. All rights reserved.</p>
+          <p className="site-footer__credits">
+            <span>Owned by <a href="https://www.devkitmarket.com/" target="_blank" rel="noreferrer">DevKit Market</a></span>
+            <span className="site-footer__credit-divider" aria-hidden="true">·</span>
+            <span>Made by Nikhil</span>
+          </p>
+          <nav className="site-footer__legal" aria-label="Legal">
+            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/terms-of-use">Terms</Link>
+            <Link href="/editorial-policy">Editorial policy</Link>
+          </nav>
         </div>
       </div>
     </footer>
