@@ -51,7 +51,7 @@ export function BlogArtwork({
     >
       <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.18em]">
         <span className="flex items-center gap-2">
-          <Icon size={15} /> Systemly field notes
+          <Icon size={15} /> System Design Mate field notes
         </span>
         <span>/{number}</span>
       </div>
