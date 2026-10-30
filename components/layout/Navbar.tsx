@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Search, Bookmark, Menu, LogIn } from "lucide-react";
+import { Search, Bookmark, Menu } from "lucide-react";
 import { SystemlyLogo } from "@/components/ui/SystemlyLogo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { NAVIGATION, homeHref, isNavigationActive } from "./navigation";
@@ -43,7 +43,7 @@ export function Navbar({
       <div className="sy-container navbar-inner">
         <Link
           href="/"
-          aria-label="Systemly home"
+          aria-label="System Design Mate home"
           onClick={(event) => {
             if (
               !event.metaKey &&
@@ -57,7 +57,7 @@ export function Navbar({
           }}
           className="shrink-0 inline-flex min-h-11 items-center"
         >
-          <SystemlyLogo />
+          <SystemlyLogo size={36} />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {NAVIGATION.map((link) => {
@@ -126,7 +126,7 @@ export function Navbar({
               </span>
             )}
           </button>
-          <Link href="/login" aria-label="Log in" className="sy-ghost nav-action"><LogIn size={17} /></Link>
+          <Link href="/login" aria-label="Log in" className="nav-login">Sign in</Link>
           <div className="nav-theme">
             <ThemeToggle />
           </div>
