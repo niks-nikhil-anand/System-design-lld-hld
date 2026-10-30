@@ -2,10 +2,6 @@ import type { ViewType } from "@/types/systemly";
 
 export const NAVIGATION: { label: string; view: ViewType; slug?: string }[] = [
   { label: "Explore", view: "explore" },
-  { label: "Concepts", view: "explore", slug: "concept" },
-  { label: "Algorithms", view: "explore", slug: "algorithm" },
-  { label: "Case studies", view: "explore", slug: "case" },
-  { label: "Companies", view: "explore", slug: "company" },
   { label: "Learning paths", view: "paths" },
   { label: "Playground", view: "playground" },
 ];
@@ -17,13 +13,16 @@ export function homeHref(view: ViewType, slug?: string | null) {
       concept: "concepts",
       algorithm: "algorithms",
       company: "companies",
-      case: "system-design",
+      case: "case-studies",
     };
-    return `/#/${directories[slug || ""] || "explore"}`;
+    return directories[slug || ""] || "/explore";
   }
   if (view === "paths" || view === "path")
-    return `/#/learning-paths${slug ? `/${slug}` : ""}`;
-  return `/#/${view}`;
+    return `/learning-paths${slug ? `/${slug}` : ""}`;
+  if (view === "bookmarks") return "/bookmarks";
+  if (view === "playground") return "/playground";
+  if (view === "about") return "/about";
+  return "/";
 }
 
 export function isNavigationActive(
