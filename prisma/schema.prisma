@@ -1,0 +1,534 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ContentKind {
+  CONCEPT
+  ALGORITHM
+  CASE_STUDY
+  COMPANY
+  LEARNING_PATH
+  BLOG_POST
+  PLAYGROUND_TEMPLATE
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum PublishStatus {
+  DRAFT
+  REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ContentLinkType {
+  RELATED
+  PREREQUISITE
+  COMPANY_REFERENCE
+  FURTHER_READING
+}
+
+enum TradeoffSide {
+  PRO
+  CON
+}
+
+enum RequirementType {
+  FUNCTIONAL
+  NON_FUNCTIONAL
+}
+
+enum UserRole {
+  USER
+  EDITOR
+  ADMIN
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String?  @unique
+  name          String?
+  image         String?
+  passwordHash  String?
+  emailVerified DateTime?
+  role          UserRole @default(USER)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  accounts  Account[]
+  sessions  Session[]
+  bookmarks Bookmark[]
+  progress  ContentProgress[]
+  blogPosts BlogPost[]
+  revisions ContentRevision[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refreshToken      String? @db.Text
+  accessToken       String? @db.Text
+  expiresAt         Int?
+  tokenType         String?
+  scope             String?
+  idToken           String? @db.Text
+  sessionState      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Category {
+  id       String      @id @default(cuid())
+  name     String
+  kind     ContentKind
+  contents Content[]
+
+  @@unique([kind, name])
+}
+
+model Tag {
+  id       String       @id @default(cuid())
+  slug     String       @unique
+  name     String
+  contents ContentTag[]
+}
+
+model Content {
+  id             String        @id @default(cuid())
+  kind           ContentKind
+  slug           String
+  title          String
+  summary        String        @db.Text
+  status         PublishStatus @default(DRAFT)
+  difficulty     Difficulty?
+  readingMinutes Int?
+  categoryId     String?
+  publishedAt    DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  category      Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  tags          ContentTag[]
+  outgoingLinks ContentLink[] @relation("SourceContent")
+  incomingLinks ContentLink[] @relation("TargetContent")
+  bookmarks     Bookmark[]
+  progress      ContentProgress[]
+  revisions     ContentRevision[]
+  concept       Concept?
+  algorithm     Algorithm?
+  caseStudy     CaseStudy?
+  company       Company?
+  learningPath  LearningPath?
+  blogPost      BlogPost?
+  playground    PlaygroundTemplate?
+  diagram       ArchitectureDiagram?
+  pathItems     PathModuleItem[]
+
+  @@unique([kind, slug])
+  @@index([kind, status, publishedAt])
+  @@index([categoryId])
+}
+
+model ContentTag {
+  contentId String
+  tagId     String
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  tag     Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([contentId, tagId])
+  @@index([tagId])
+}
+
+model ContentLink {
+  sourceId  String
+  targetId  String
+  type      ContentLinkType @default(RELATED)
+  sortOrder Int             @default(0)
+
+  source Content @relation("SourceContent", fields: [sourceId], references: [id], onDelete: Cascade)
+  target Content @relation("TargetContent", fields: [targetId], references: [id], onDelete: Cascade)
+
+  @@id([sourceId, targetId, type])
+  @@index([targetId, type])
+}
+
+model Concept {
+  contentId    String  @id
+  definition   String? @db.Text
+  whatItIs     String? @db.Text
+  whyItMatters String? @db.Text
+
+  content   Content          @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  steps     ConceptStep[]
+  variants  ConceptVariant[]
+  tradeoffs ConceptTradeoff[]
+}
+
+model ConceptStep {
+  id        String @id @default(cuid())
+  conceptId String
+  sortOrder Int
+  body      String @db.Text
+
+  concept Concept @relation(fields: [conceptId], references: [contentId], onDelete: Cascade)
+
+  @@unique([conceptId, sortOrder])
+}
+
+model ConceptVariant {
+  id        String @id @default(cuid())
+  conceptId String
+  key       String
+  label     String
+  note      String @db.Text
+  sortOrder Int    @default(0)
+
+  concept Concept @relation(fields: [conceptId], references: [contentId], onDelete: Cascade)
+
+  @@unique([conceptId, key])
+  @@unique([conceptId, sortOrder])
+}
+
+model ConceptTradeoff {
+  id        String       @id @default(cuid())
+  conceptId String
+  side      TradeoffSide
+  body      String       @db.Text
+  sortOrder Int          @default(0)
+
+  concept Concept @relation(fields: [conceptId], references: [contentId], onDelete: Cascade)
+
+  @@unique([conceptId, side, sortOrder])
+}
+
+model Algorithm {
+  contentId       String @id
+  timeComplexity  String
+  spaceComplexity String
+  visualization   Int[]
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+}
+
+model CaseStudy {
+  contentId         String  @id
+  problem           String? @db.Text
+  assumptions       String? @db.Text
+  architectureTitle String?
+
+  content           Content            @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  objectives        CaseObjective[]
+  requirements      CaseRequirement[]
+  capacityEstimates CapacityEstimate[]
+  apiEndpoints      ApiEndpoint[]
+  deepDives         DeepDive[]
+  tradeoffs         CaseTradeoff[]
+}
+
+model CaseObjective {
+  id        String @id @default(cuid())
+  caseId    String
+  body      String @db.Text
+  sortOrder Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, sortOrder])
+}
+
+model CaseRequirement {
+  id        String          @id @default(cuid())
+  caseId    String
+  type      RequirementType
+  body      String          @db.Text
+  sortOrder Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, type, sortOrder])
+}
+
+model CapacityEstimate {
+  id        String @id @default(cuid())
+  caseId    String
+  label     String
+  value     String
+  rationale String? @db.Text
+  sortOrder Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, sortOrder])
+}
+
+model ApiEndpoint {
+  id          String @id @default(cuid())
+  caseId      String
+  method      String
+  path        String
+  description String @db.Text
+  sortOrder   Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, sortOrder])
+}
+
+model DeepDive {
+  id        String @id @default(cuid())
+  caseId    String
+  title     String
+  body      String @db.Text
+  sortOrder Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, sortOrder])
+}
+
+model CaseTradeoff {
+  id        String @id @default(cuid())
+  caseId    String
+  question  String @db.Text
+  decision  String @db.Text
+  rationale String @db.Text
+  sortOrder Int
+
+  caseStudy CaseStudy @relation(fields: [caseId], references: [contentId], onDelete: Cascade)
+
+  @@unique([caseId, sortOrder])
+}
+
+model Company {
+  contentId         String  @id
+  overview          String? @db.Text
+  architectureTitle String?
+
+  content   Content           @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  products  CompanyProduct[]
+  metrics   CompanyMetric[]
+  takeaways CompanyTakeaway[]
+}
+
+model CompanyProduct {
+  id        String @id @default(cuid())
+  companyId String
+  name      String
+  problem   String @db.Text
+  sortOrder Int
+
+  company Company @relation(fields: [companyId], references: [contentId], onDelete: Cascade)
+
+  @@unique([companyId, sortOrder])
+}
+
+model CompanyMetric {
+  id        String @id @default(cuid())
+  companyId String
+  label     String
+  value     String
+  sortOrder Int
+
+  company Company @relation(fields: [companyId], references: [contentId], onDelete: Cascade)
+
+  @@unique([companyId, sortOrder])
+}
+
+model CompanyTakeaway {
+  id        String @id @default(cuid())
+  companyId String
+  body      String @db.Text
+  sortOrder Int
+
+  company Company @relation(fields: [companyId], references: [contentId], onDelete: Cascade)
+
+  @@unique([companyId, sortOrder])
+}
+
+model LearningPath {
+  contentId       String @id
+  durationMinutes Int?
+
+  content Content      @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  modules PathModule[]
+}
+
+model PathModule {
+  id        String @id @default(cuid())
+  pathId    String
+  title     String
+  sortOrder Int
+
+  path  LearningPath     @relation(fields: [pathId], references: [contentId], onDelete: Cascade)
+  items PathModuleItem[]
+
+  @@unique([pathId, sortOrder])
+}
+
+model PathModuleItem {
+  moduleId  String
+  contentId String
+  sortOrder Int
+
+  module  PathModule @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  content Content    @relation(fields: [contentId], references: [id], onDelete: Restrict)
+
+  @@id([moduleId, contentId])
+  @@unique([moduleId, sortOrder])
+  @@index([contentId])
+}
+
+model BlogPost {
+  contentId String @id
+  intro     String @db.Text
+  authorId  String?
+
+  content  Content       @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  author   User?         @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  sections BlogSection[]
+
+  @@index([authorId])
+}
+
+model BlogSection {
+  id        String  @id @default(cuid())
+  postId    String
+  anchor    String
+  title     String
+  body      String  @db.Text
+  code      String? @db.Text
+  takeaway  String? @db.Text
+  sortOrder Int
+
+  post BlogPost @relation(fields: [postId], references: [contentId], onDelete: Cascade)
+
+  @@unique([postId, anchor])
+  @@unique([postId, sortOrder])
+}
+
+model PlaygroundTemplate {
+  contentId  String  @id
+  p99Latency String?
+  throughput String?
+  bottleneck String? @db.Text
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+}
+
+model ArchitectureDiagram {
+  id        String  @id @default(cuid())
+  contentId String  @unique
+  title     String?
+
+  content Content       @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  nodes   DiagramNode[]
+  edges   DiagramEdge[]
+}
+
+model DiagramNode {
+  id          String @id @default(cuid())
+  diagramId   String
+  externalKey String
+  label       String
+  type        String
+  description String? @db.Text
+  x           Float
+  y           Float
+  sortOrder   Int    @default(0)
+
+  diagram ArchitectureDiagram @relation(fields: [diagramId], references: [id], onDelete: Cascade)
+
+  @@unique([diagramId, externalKey])
+}
+
+model DiagramEdge {
+  id            String  @id @default(cuid())
+  diagramId     String
+  sourceNodeKey String
+  targetNodeKey String
+  label         String?
+  sortOrder     Int     @default(0)
+
+  diagram ArchitectureDiagram @relation(fields: [diagramId], references: [id], onDelete: Cascade)
+
+  @@index([diagramId])
+}
+
+model Bookmark {
+  userId    String
+  contentId String
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+
+  @@id([userId, contentId])
+  @@index([contentId])
+}
+
+model ContentProgress {
+  userId      String
+  contentId   String
+  startedAt   DateTime?
+  completedAt DateTime?
+  percent     Int      @default(0)
+  updatedAt   DateTime @updatedAt
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+
+  @@id([userId, contentId])
+  @@index([userId, updatedAt])
+}
+
+model ContentRevision {
+  id        String        @id @default(cuid())
+  contentId String
+  authorId  String?
+  version   Int
+  status    PublishStatus @default(DRAFT)
+  snapshot  Json
+  note      String?       @db.Text
+  createdAt DateTime      @default(now())
+
+  content Content @relation(fields: [contentId], references: [id], onDelete: Cascade)
+  author  User?   @relation(fields: [authorId], references: [id], onDelete: SetNull)
+
+  @@unique([contentId, version])
+  @@index([contentId, status, createdAt])
+}
