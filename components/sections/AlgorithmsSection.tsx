@@ -20,7 +20,7 @@ export function AlgorithmsSection({
   onViewAll,
 }: AlgorithmsSectionProps) {
   return (
-    <section className="sy-container site-section border-t border-[var(--border)]">
+    <section data-home-section="algorithms" className="sy-container site-section border-t border-[var(--border)]">
       {/* Section Header */}
       <div className="section-heading">
         <div>
