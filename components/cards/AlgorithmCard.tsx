@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { AlgorithmItem } from "@/types/systemly";
 import { Badge } from "@/components/ui/Badge";
 import { Bookmark, Cpu, ArrowRight } from "lucide-react";
@@ -26,7 +27,7 @@ export function AlgorithmCard({
   return (
     <article
       onClick={onClick}
-      className="sy-card group relative flex flex-col justify-between p-4 sm:p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] cursor-pointer select-none transition-all duration-200"
+      className="sy-card home-algorithm-card group relative flex flex-col justify-between p-4 sm:p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)] cursor-pointer select-none transition-all duration-200"
     >
       <div>
         {/* Header row */}
@@ -61,16 +62,16 @@ export function AlgorithmCard({
 
         {/* Title & Blurb */}
         <h3 className="text-[16px] sm:text-[17px] font-semibold text-[var(--text)] tracking-[-0.01em] group-hover:text-[var(--accent)] transition-colors mb-1.5">
-          <button type="button" className="min-h-11 text-left cursor-pointer">
+          <Link href={"/algorithms/" + item.slug} onClick={(event) => event.stopPropagation()} className="min-h-11 inline-flex items-center text-left cursor-pointer">
             {item.title}
-          </button>
+          </Link>
         </h3>
         <p className="text-[13px] text-[var(--muted)] line-clamp-2 leading-relaxed mb-3">
           {item.blurb}
         </p>
 
         {/* Mini interactive bar chart representation */}
-        <div className="flex items-end justify-between gap-1.5 h-10 py-1.5 px-3 rounded-xl bg-[var(--surface2)] border border-[var(--border)] mb-3">
+        <div className="home-algorithm-bars flex items-end justify-between gap-1.5 h-10 py-1.5 px-3 rounded-xl bg-[var(--surface2)] border border-[var(--border)] mb-3">
           {item.mini.map((val, idx) => {
             const heightPercent = Math.max(
               15,
@@ -110,10 +111,10 @@ export function AlgorithmCard({
           <Cpu className="w-3.5 h-3.5" />
           Interactive trace
         </span>
-        <span className="font-medium text-[var(--accent)] group-hover:underline flex items-center gap-1">
+        <Link href={"/algorithms/" + item.slug} onClick={(event) => event.stopPropagation()} className="font-medium text-[var(--accent)] group-hover:underline flex items-center gap-1">
           Visualize
           <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
-        </span>
+        </Link>
       </div>
     </article>
   );
