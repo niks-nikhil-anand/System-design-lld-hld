@@ -5,7 +5,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 
 export function BlogSection() {
   return (
-    <section
+    <section data-home-section="blog"
       aria-labelledby="home-blog-heading"
       className="sy-container site-section border-t border-[var(--border)]"
     >
