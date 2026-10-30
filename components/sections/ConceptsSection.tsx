@@ -36,7 +36,7 @@ export function ConceptsSection({
       : CONCEPTS.filter((c) => c.cat === selectedCat);
 
   return (
-    <section className="sy-container site-section border-t border-[var(--border)]">
+    <section data-home-section="concepts" className="sy-container site-section border-t border-[var(--border)]">
       {/* Section Header */}
       <div className="section-heading">
         <div>
