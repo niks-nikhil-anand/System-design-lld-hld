@@ -287,7 +287,7 @@ export function SearchModal({
               to select
             </span>
           </div>
-          <span>Systemly universal index</span>
+          <span>System Design Mate universal index</span>
         </div>
       </div>
     </div>,
