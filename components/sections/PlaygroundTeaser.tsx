@@ -78,8 +78,8 @@ export function PlaygroundTeaser({
     return () => clearInterval(timer);
   }, [animationActive, playing]);
   return (
-    <section className="sy-container site-section border-t border-[var(--border)]">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center p-4 sm:p-6 lg:p-8 rounded-3xl border border-[var(--border)] bg-[var(--surface)] shadow-md">
+    <section data-home-section="playground" className="sy-container site-section border-t border-[var(--border)]">
+      <div className="home-playground-panel grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center p-4 sm:p-6 lg:p-8 rounded-3xl border border-[var(--border)] bg-[var(--surface)] shadow-md">
         <div className="lg:col-span-5 min-w-0 flex flex-col gap-4">
           <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-[var(--border)] bg-[var(--surface2)] text-xs font-medium text-[var(--accent)] self-start">
             <Play size={14} className="shrink-0" />
