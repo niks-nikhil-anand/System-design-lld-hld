@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteConfig } from "@/lib/site";
+import { BookmarkProvider } from "@/hooks/useBookmarks";
 import "./globals.css";
+import "./homepage.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +22,12 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Systemly — Interactive System Design Learning",
-  description:
-    "Learn how real-world systems work through interactive diagrams, animated request flows, and hands-on architecture experiments. 20 concepts, 15 algorithms, 10 case studies.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} | Interactive System Design Learning`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
   keywords: [
     "system design",
     "distributed systems",
@@ -34,9 +40,23 @@ export const metadata: Metadata = {
     "caching",
     "load balancer"
   ],
-  authors: [{ name: "Systemly" }],
-  icons: {
-    icon: "/favicon.ico",
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  applicationName: siteConfig.name,
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Interactive System Design Learning`,
+    description: siteConfig.description,
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "System Design Mate — learn system design visually" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.name} | Interactive System Design Learning`,
+    description: siteConfig.description,
+    images: ["/opengraph-image"],
   },
 };
 
@@ -52,7 +72,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--bg)] text-[var(--text)]">
-        {children}
+        <BookmarkProvider>{children}</BookmarkProvider>
       </body>
     </html>
   );
