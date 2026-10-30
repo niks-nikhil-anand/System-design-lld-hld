@@ -31,7 +31,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Caching",
     level: "Beginner",
     publishedAt: "2026-10-24",
-    author: "Systemly Editorial",
+    author: "System Design Mate Editorial",
     readMinutes: 4,
     tags: ["Cache-aside", "Redis", "Latency"],
     diagram: {
@@ -88,7 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Traffic",
     level: "Intermediate",
     publishedAt: "2026-10-21",
-    author: "Systemly Editorial",
+    author: "System Design Mate Editorial",
     readMinutes: 4,
     tags: ["Token bucket", "APIs", "Reliability"],
     diagram: {
@@ -143,7 +143,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Messaging",
     level: "Intermediate",
     publishedAt: "2026-10-18",
-    author: "Systemly Editorial",
+    author: "System Design Mate Editorial",
     readMinutes: 4,
     tags: ["Queues", "Idempotency", "Retries"],
     diagram: {
@@ -200,7 +200,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Databases",
     level: "Beginner",
     publishedAt: "2026-10-15",
-    author: "Systemly Editorial",
+    author: "System Design Mate Editorial",
     readMinutes: 4,
     tags: ["Indexes", "Replication", "Sharding"],
     diagram: {
