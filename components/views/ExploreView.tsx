@@ -22,6 +22,7 @@ interface ExploreViewProps {
   isBookmarked: (key: string) => boolean;
   onBookmarkToggle: (key: string) => void;
   onBackToHome?: () => void;
+  lockedType?: boolean;
 }
 
 export function ExploreView({
@@ -31,6 +32,7 @@ export function ExploreView({
   isBookmarked,
   onBookmarkToggle,
   onBackToHome,
+  lockedType = false,
 }: ExploreViewProps) {
   const [query, setQuery] = useState(initialQuery);
   const [selectedType, setSelectedType] = useState<string>(initialType);
@@ -127,7 +129,7 @@ export function ExploreView({
         </div>
 
         {/* Type Filter Pills */}
-        <div className="view-filters" role="group" aria-label="Topic type">
+        {!lockedType && <div className="view-filters" role="group" aria-label="Topic type">
           {types.map((t) => {
             const isActive = selectedType === t.id;
             return (
@@ -146,7 +148,7 @@ export function ExploreView({
               </button>
             );
           })}
-        </div>
+        </div>}
 
         {/* Second Row: Difficulty and Sort Selectors */}
         <div className="explore-selects border-t border-[var(--border)] text-[var(--muted)]">
