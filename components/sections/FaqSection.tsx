@@ -6,7 +6,7 @@ import { ChevronRight, HelpCircle } from "lucide-react";
 
 export function FaqSection() {
   return (
-    <section
+    <section data-home-section="faq"
       id="faq"
       className="sy-container site-section faq-section border-t border-[var(--border)]"
     >
@@ -20,7 +20,7 @@ export function FaqSection() {
         </h2>
         <p className="text-sm text-[var(--muted)] mt-2">
           Everything you need to know about the simulations, models, and how to
-          get the most out of Systemly.
+          get the most out of System Design Mate.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export function FaqSection() {
           >
             <summary className="flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-[var(--text)] select-none cursor-pointer">
               <span>{faq.q}</span>
-              <span className="p-1 rounded-md text-[var(--muted)] group-open:rotate-90 transition-transform duration-200 flex-shrink-0">
+              <span className="p-1 rounded-md text-[var(--muted)] transition-transform duration-200 flex-shrink-0">
                 <ChevronRight className="w-4 h-4 sy-chev" />
               </span>
             </summary>
