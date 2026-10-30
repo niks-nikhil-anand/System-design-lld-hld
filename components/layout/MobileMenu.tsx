@@ -42,10 +42,7 @@ export function MobileMenu({
     return () => media.removeEventListener("change", handleChange);
   }, [isOpen, onClose]);
   if (!isOpen) return null;
-  const links = [
-    ...NAVIGATION,
-    { label: "About & notes", view: "about" as const },
-  ];
+  const links = NAVIGATION;
   return createPortal(
     <div className="drawer-overlay">
       <div
@@ -64,7 +61,7 @@ export function MobileMenu({
       >
         <div className="flex shrink-0 items-center justify-between gap-3 border-b border-[var(--border)] pb-4">
           <h2 id="navigation-title">
-            <span className="sr-only">Systemly navigation</span>
+            <span className="sr-only">System Design Mate navigation</span>
             <span aria-hidden="true">
               <SystemlyLogo size={24} />
             </span>
@@ -132,6 +129,15 @@ export function MobileMenu({
             className={`drawer-link ${currentView === "blog" ? "nav-link-active" : ""}`}
           >
             <span>Blog</span>
+            <ChevronRight size={16} className="ml-auto" />
+          </Link>
+          <Link
+            href="/about"
+            onClick={onClose}
+            aria-current={currentView === "about" ? "page" : undefined}
+            className={`drawer-link ${currentView === "about" ? "nav-link-active" : ""}`}
+          >
+            <span>About</span>
             <ChevronRight size={16} className="ml-auto" />
           </Link>
           <Link href="/login" onClick={onClose} className="drawer-link"><span>Log in</span><ChevronRight size={16} className="ml-auto" /></Link>
