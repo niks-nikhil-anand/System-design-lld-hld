@@ -18,7 +18,15 @@ export function ShelvesSection({
   onBookmarkToggle,
 }: ShelvesSectionProps) {
   return (
-    <section className="sy-container site-section border-t border-[var(--border)]">
+    <section data-home-section="shelves" className="sy-container site-section border-t border-[var(--border)]">
+      <div className="section-heading">
+        <div>
+          <p className="home-eyebrow">A little curiosity goes a long way</p>
+          <h2>Find your next idea.</h2>
+          <p className="home-section-description">Fresh additions, essential concepts, and a friendly place to begin.</p>
+        </div>
+        <span className="home-section-note">Made for your next aha moment</span>
+      </div>
       <div className="flex flex-col gap-12">
         {SHELVES.map((shelf) => (
           <div key={shelf.title} className="flex flex-col gap-5">
@@ -33,7 +41,7 @@ export function ShelvesSection({
             </div>
 
             {/* Shelf Items - Horizontal Scroll on small, flex/grid on large */}
-            <div className="shelf-grid">
+            <div className="shelf-grid" role="region" aria-label={shelf.title} tabIndex={0}>
               {shelf.items.map((item) => {
                 const itemKey = `${item.kind}:${item.slug}`;
                 const bookmarked = isBookmarked(itemKey);
