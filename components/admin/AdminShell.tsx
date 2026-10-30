@@ -11,9 +11,12 @@ import {
   FlaskConical,
   FolderOpen,
   LayoutDashboard,
+  Palette,
+  PanelTop,
   LogIn,
   Route,
   Shapes,
+  Waypoints,
 } from "lucide-react";
 import { SystemlyLogo } from "@/components/ui/SystemlyLogo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
@@ -68,7 +71,7 @@ function Navigation() {
       <SidebarHeader className="p-4">
         <Link
           href="/"
-          aria-label="Systemly home"
+          aria-label="System Design Mate home"
           className="flex min-h-11 items-center overflow-hidden"
         >
           <span className="group-data-[collapsible=icon]:hidden">
@@ -95,6 +98,17 @@ function Navigation() {
                 >
                   <LayoutDashboard />
                   <span>Overview</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  render={<Link href="/admin/content/new" />}
+                  isActive={pathname === "/admin/content/new"}
+                  tooltip="Create content"
+                  onClick={() => setOpenMobile(false)}
+                >
+                  <FileText />
+                  <span>Create content</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -125,6 +139,32 @@ function Navigation() {
                         ).length
                       }
                     </SidebarMenuBadge>
+                  </SidebarMenuItem>
+                );
+              })}
+            </SidebarMenu>
+          </SidebarGroup>
+          <SidebarGroup>
+            <SidebarGroupLabel>Creative tools</SidebarGroupLabel>
+            <SidebarMenu>
+              {[
+                { label: "Diagram studio", href: "/admin/diagrams", icon: Waypoints },
+                { label: "Brand studio", href: "/admin/brand", icon: Palette },
+                { label: "Preview center", href: "/admin/preview", icon: PanelTop },
+              ].map(({ label, href, icon: ToolIcon }) => {
+                const active = pathname === href;
+                return (
+                  <SidebarMenuItem key={href}>
+                    <SidebarMenuButton
+                      render={<Link href={href} />}
+                      isActive={active}
+                      aria-current={active ? "page" : undefined}
+                      tooltip={label}
+                      onClick={() => setOpenMobile(false)}
+                    >
+                      <ToolIcon />
+                      <span>{label}</span>
+                    </SidebarMenuButton>
                   </SidebarMenuItem>
                 );
               })}
@@ -217,7 +257,7 @@ function Frame({ children }: { children: React.ReactNode }) {
         <div id="main-content" tabIndex={-1} className="cms-main">
           {children}
           <footer className="cms-footer">
-            <span>Systemly administration</span>
+            <span>System Design Mate administration</span>
             <span>Built for a better learning experience.</span>
           </footer>
         </div>
