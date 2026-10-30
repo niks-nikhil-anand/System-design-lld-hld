@@ -37,7 +37,7 @@ export function BlogIndex() {
         <div className="blog-intro-grid">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)] mb-3">
-              The Systemly blog
+              The System Design Mate blog
             </p>
             <h1 className="blog-index-title font-bold tracking-tight">
               Good systems start with better questions.
